@@ -3,7 +3,7 @@ const getTasks = async (
 req,
 res) => {
 try {
-const tasks = await Task.find({ userId: req.user.id });
+const tasks = await Task.find({});
 res.json(tasks);
 } catch (error) {
 res.status(500).json({ message: error.message });
@@ -13,9 +13,9 @@ res.status(500).json({ message: error.message });
 const addTask = async (
 req,
 res) => {
-const { title, description, deadline } = req.body;
+const { title, description} = req.body;
 try {
-const task = await Task.create({ userId: req.user.id, title, description, deadline });
+const task = await Task.create({ userId: req.user.id, title, description});
 res.status(201).json(task);
 } catch (error) {
 res.status(500).json({ message: error.message });

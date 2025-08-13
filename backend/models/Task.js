@@ -5,7 +5,7 @@ const taskSchema = new mongoose.Schema({
     title: { type: String, required: true },
     description: { type: String },
     completed: { type: Boolean, default: false },
-    deadline: { type: Date },
+    //deadline: { type: Date },
 });
 
 module.exports = mongoose.model('Task', taskSchema);
