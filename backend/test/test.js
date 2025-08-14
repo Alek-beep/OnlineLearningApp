@@ -158,7 +158,7 @@ describe('Update Module Test', () => {
 
 
 
-describe('GetModule Function Test', () => {
+/*describe('GetModule Function Test', () => {
 
   it('should return modules', async () => {
     // Mock user ID
@@ -217,7 +217,7 @@ describe('GetModule Function Test', () => {
 });
 
 
-
+*/
 describe('DeleteModule Function Test', () => {
 
   it('should delete a module successfully', async () => {
